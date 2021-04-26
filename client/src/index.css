@@ -1,0 +1,25 @@
+:root {
+  --copper: #f3c049; /*#f1b24a; */
+  --darkCopper: #d3a740;
+  --copperHover: #ffdd8c;
+  --primary: #f58f7c;
+  --darkGreen: #164a41;
+  --normalGreen: #4d774e;
+  --lightGreen: #9dc88d;
+  --white: white;
+  --navbarcolor: #10242b;
+  --grey: #8b8c89; /*#c2bfbf; */
+  --primarydark: #173c44;
+}
+body {
+  background-color: var(--grey);
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

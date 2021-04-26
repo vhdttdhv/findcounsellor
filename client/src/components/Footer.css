@@ -1,0 +1,13 @@
+.footer-container {
+  margin-top: auto;
+  width: 90%;
+  height: 5vh;
+  align-items: center;
+  display: flex;
+  font-size: 0.7rem;
+  border-top: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.footer-container > p {
+  padding-left: 0.5%;
+}

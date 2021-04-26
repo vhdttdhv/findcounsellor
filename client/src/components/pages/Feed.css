@@ -1,0 +1,19 @@
+.feed-container {
+  display: flex;
+  flex-direction: row;
+}
+.feed-content-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5%;
+  padding: 5%;
+  padding-top: 2%;
+  grid-auto-rows: max-content;
+  grid-auto-columns: max-content;
+}
+@media screen and (max-width: 960px) {
+  .feed-content-container {
+    grid-template-columns: 1fr;
+  }
+}

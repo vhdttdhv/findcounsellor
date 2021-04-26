@@ -1,0 +1,54 @@
+.hero-img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero-container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  object-fit: contain;
+  color: var(--white);
+}
+.hero-content-container > h1 {
+  font-size: 3.5em;
+}
+.hero-content-container > p {
+  font-size: 1.6em;
+}
+.hero-calendar-container {
+  background-color: var(--grey);
+  width: 40vw;
+  padding-bottom: 0;
+}
+.hero-content-container {
+  padding-top: 10vh;
+  align-self: flex-start;
+}
+.hero-button-container {
+  display: flex;
+  padding-top: 20px;
+  text-decoration: none;
+}
+@media screen and (max-width: 960px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    font-size: 0.5rem;
+    justify-content: space-evenly;
+  }
+
+  .hero-calendar-container {
+    width: 80%;
+  }
+
+  .hero-content-container {
+    padding-left: 10%;
+    padding-top: 0;
+  }
+}
