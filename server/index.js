@@ -19,10 +19,12 @@ app.use("/counsellors", CounsellorRoutes);
 app.use("/user", UserRoutes);
 
 const PORT = process.env.PORT || 5000;
-
 // connect to dtb
 mongoose
-  .connect(DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(process.env.REACT_APP_DATABASE_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() =>
     app.listen(PORT, () => console.log(`Server Port: http://localhost:${PORT}`))
   )

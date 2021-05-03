@@ -16,7 +16,6 @@ const formReset = {
 };
 
 function AuthPage() {
-  console.log(process.env.REACT_APP_CLIENT_ID);
   dotenv.config();
   const history = useHistory();
   const [isSignInForm, setIsSignInForm] = useState(true);
